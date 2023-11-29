@@ -50,7 +50,7 @@ listint_t *insert_node(listint_t **head, int number)
 	else if (p1->n > number)
 	{
 		node->next = p1;
-		*(head)->next = node;
+		(*head)->next = node;
 	}
 	return (node);
 }
