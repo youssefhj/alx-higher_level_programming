@@ -12,7 +12,7 @@ int check(listint_t **head, listint_t *e)
 	if (e == NULL)
 		return (1);
 
-	if (chaeck(head, e->next) && e->n == (*head)->n)
+	if (check(head, e->next) && e->n == (*head)->n)
 	{
 		*head = (*head)->next;
 		return (1);
