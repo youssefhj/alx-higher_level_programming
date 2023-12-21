@@ -22,7 +22,7 @@ class Square:
             TypeError: if the size is not an integer
             ValueError: if size is less than 0
         """
-        return self.__size
+        return (self.__size)
 
     @size.setter
     def size(self, value):
@@ -36,7 +36,7 @@ class Square:
     def position(self):
         """Get/set the current position of the square"""
         return (self.__position)
-    
+
     @position.setter
     def position(self, value):
         if (not isinstance(value, tuple) or
@@ -45,7 +45,7 @@ class Square:
                 not all(num >= 0 for num in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
-    
+
     def area(self):
         """Return the current area of the square"""
         return (self.__size * self.__size)
