@@ -16,12 +16,7 @@ class Square:
 
     @property
     def size(self):
-        """Property for the length of a side of this square
-
-        Raises:
-            TypeError: if the size is not an integer
-            ValueError: if size is less than 0
-        """
+        """Get/set the current size of the square"""
         return (self.__size)
 
     @size.setter
