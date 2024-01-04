@@ -3,6 +3,7 @@
 Defines a Rectangle class
 """
 
+
 class Rectangle:
     """Respresent a Rectangle"""
     def __init__(self, width=0, height=0):
@@ -37,3 +38,4 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
