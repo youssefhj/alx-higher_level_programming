@@ -52,6 +52,8 @@ class Rectangle:
     def __str__(self):
         """Return string with # forming a rectangle"""
         s = ""
+        if (self.__width == 0 or self.__height == 0):
+            return s
         for i in range(self.__width):
             for j in range(self.__height):
                 s += "#"
