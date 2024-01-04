@@ -73,7 +73,7 @@ class Rectangle:
     def bigger_or_equal(rect_1, rect_2):
         """Returns the biggest area between rect_1 and rect_2
 
-        Args: 
+        Args:
             rect_1: first rectangle
             rect_2: second rectangle
 
