@@ -70,11 +70,13 @@ class Rectangle:
         """Representation of rectange object"""
         return "Rectange({:d}, {:d})".format(self.__width, self.__height)
 
+    @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Return the biggest area between rect_1 and rect_2"""
-        if type(rect_1) is not Rectangle:
+        if not isinstance(rect_1, Rectangle):
             TypeError("rect_1 must be an instance of Rectangle")
-        if type(rect_2) is not Rectangle:
+
+        if not isinstance(rect_2, Rectangle):
             TypeError("rect_2 must be an instance of Rectangle")
 
         if rect_1.area() >= rect_2.area():
